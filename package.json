@@ -1,0 +1,31 @@
+{
+  "name": "mitosis-component-library-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate:source": "pnpm --filter mitosis-component-library run generate:source",
+    "bundle:all": "pnpm --filter mitosis-component-library run bundle:all"
+  },
+  "keywords": [],
+  "author": "rickiezheng",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@builder.io/eslint-plugin-mitosis": "^0.0.15",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@builder.io/mitosis": "^0.0.134",
+    "@builder.io/mitosis-cli": "^0.0.93",
+    "npm-run-all": "4.1.5",
+    "eslint": "^8.54.0",
+    "solid-js": "^1.8.5",
+    "solid-styled-components": "^0.28.5",
+    "typescript": "5.3.2",
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "mitosis-component-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    "./react": {
+      "import": "./dist/react/dist/esm/index.js",
+      "types": "./dist/react/dist/esm/types/index.d.ts"
+    },
+    "./solid": {
+      "import": "./dist/solid/dist/esm/index.js",
+      "types": "./dist/solid/dist/esm/types/index.d.ts"
+    },
+    "./vue": {
+      "import": "./dist/vue/dist/esm/index.js",
+      "types": "./dist/vue/dist/esm/types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "mitosis:build": "mitosis build",
+    "copy": "cp -r templates/ dist/",
+    "generate:source": "run-s clean mitosis:build copy",
+    "build:react": "tsc -p dist/react/tsconfig.json",
+    "build:solid": "tsc -p dist/solid/tsconfig.json",
+    "bundle:react": "run-s generate:source build:react",
+    "bundle:solid": "run-s generate:source build:solid",
+    "bundle:all": "run-p build:react build:solid"
+  },
+  "keywords": [],
+  "author": "rickiezheng",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@builder.io/eslint-plugin-mitosis": "^0.0.15",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@builder.io/mitosis": "^0.0.134",
+    "@builder.io/mitosis-cli": "^0.0.93",
+    "npm-run-all": "4.1.5",
+    "eslint": "^8.54.0",
+    "solid-js": "^1.8.5",
+    "solid-styled-components": "^0.28.5",
+    "typescript": "5.3.2",
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17"
+  }
+}

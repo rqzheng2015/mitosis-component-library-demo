@@ -1,0 +1,26 @@
+{
+  "name": "@example/react-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "rickiezheng",
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.0.3",
+    "mitosis-component-library": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3"
+  }
+}
