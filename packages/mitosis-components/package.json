@@ -5,16 +5,12 @@
   "main": "index.js",
   "exports": {
     "./react": {
-      "import": "./dist/react/dist/esm/index.js",
-      "types": "./dist/react/dist/esm/types/index.d.ts"
+      "import": "./dist/react/dist/index.js",
+      "types": "./dist/react/dist/types/index.d.ts"
     },
     "./solid": {
-      "import": "./dist/solid/dist/esm/index.js",
-      "types": "./dist/solid/dist/esm/types/index.d.ts"
-    },
-    "./vue": {
-      "import": "./dist/vue/dist/esm/index.js",
-      "types": "./dist/vue/dist/esm/types/index.d.ts"
+      "import": "./dist/solid/dist/index.js",
+      "types": "./dist/solid/dist/types/index.d.ts"
     }
   },
   "scripts": {

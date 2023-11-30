@@ -17,16 +17,16 @@ export default function Home() {
                         rel="noopener noreferrer"
                     >
                         By{' '}
-                        <Image
-                            src="/vercel.svg"
-                            alt="Vercel Logo"
-                            className={styles.vercelLogo}
-                            width={100}
-                            height={24}
-                            priority
-                        />
+                        {/*<Image*/}
+                        {/*    src="/vercel.svg"*/}
+                        {/*    alt="Vercel Logo"*/}
+                        {/*    className={styles.vercelLogo}*/}
+                        {/*    width={100}*/}
+                        {/*    height={24}*/}
+                        {/*    priority*/}
+                        {/*/>*/}
                         {/* Look, We use mitosis image component here!!! */}
-                        <MitosisImage src={"/vercel.svg"}/>
+                        <MitosisImage src={"/vercel.svg"} style={{height:"30px"}}/>
                     </a>
                 </div>
             </div>

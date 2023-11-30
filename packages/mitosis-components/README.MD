@@ -28,7 +28,7 @@ pnpm bundle:react
 pnpm bundle:solid
 ```
 
-After running this command, you will see the generated bundle in `packages/mitosis-components/dist/<framework>/dist/esm` directory.
+After running this command, you will see the generated bundle in `packages/mitosis-components/dist/<framework>/dist` directory.
 
 ## How to use
 

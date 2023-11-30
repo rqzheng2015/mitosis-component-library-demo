@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "dist/esm",
+    "outDir": "dist",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -22,7 +22,7 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "declaration": true,
-    "declarationDir": "dist/esm/types"
+    "declarationDir": "dist/types"
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
