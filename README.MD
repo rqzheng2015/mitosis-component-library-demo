@@ -21,7 +21,7 @@ After running this command, you will see the generated source code in `packages/
 - Generate the bundle of transformed source code in specified framework, such as React, Vue, Solid, etc.
 
 ```shell
-# bundle all supported framework bundles (Need to generate source code first)
+# bundle all supported framework bundles
 pnpm bundle:all
 ```
 
