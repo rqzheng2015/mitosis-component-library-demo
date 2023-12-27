@@ -22,7 +22,7 @@
     "build:solid": "tsc -p dist/solid/tsconfig.json",
     "bundle:react": "run-s generate:source build:react",
     "bundle:solid": "run-s generate:source build:solid",
-    "bundle:all": "run-s generate:source build:react build:solid"
+    "bundle:all": "run-s build:react build:solid"
   },
   "keywords": [],
   "author": "rickiezheng",
